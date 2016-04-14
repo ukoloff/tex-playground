@@ -1,9 +1,10 @@
 \documentclass[12pt]{article}
 
-\usepackage[a4paper, landscape, margin=1cm]{geometry}
+\usepackage[a4paper, margin=1cm]{geometry}
 \usepackage[T1,T2A]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage[english, russian]{babel}
+\usepackage{pdflscape}
 
 \begin{document}
 
@@ -18,7 +19,7 @@ Hello, \hfill\LaTeXe{}!
 
 Превед, медвед!
 
-\pagebreak 
+\begin{landscape}
 
 normal text {\itshape walzing \bfseries Wombat} more normal text \hrulefill
 
@@ -45,6 +46,8 @@ normal text \bgroup\itshape walzing \bfseries Wombat\egroup{} more normal text
 \begin{equation}
    C^i_j =  \sum_k A^i_k B^k_j
 \end{equation}
+
+\end{landscape}
 
 
 \end{document}
